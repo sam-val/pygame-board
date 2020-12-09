@@ -1,4 +1,3 @@
-<img scr= "imgs/2.gif" width="400"/>
 
 ## pygame-board
 Making drawing board-oriented stuff a bit easier.
@@ -23,7 +22,7 @@ screen = pg.display.set_mode([BOARD_WIDTH*CUBE_WIDTH, BOARD_HEIGHT*CUBE_WIDTH])
 
 <b># Generate your board:</b>
 	
-my_cube = MyRect(size=(CUBE_WIDTH, CUBE_WIDTH), colour='red') # rect object for the cubes that make up the board.
+my_cube = MyRect(size=(CUBE_WIDTH, CUBE_WIDTH), colour='red') <b># rect object for the cubes that make up the board.</b>
 my_board = Board(screen, position(0,0), size=(BOARD_WIDTH, BOARD_HEIGHT),
 		cube=my_cube, 
 		line=True,
@@ -43,6 +42,8 @@ while True:
 </code></pre>
 
 ## Demo:
+<img src= "imgs/preview.gif"/>
+
 
 
 
