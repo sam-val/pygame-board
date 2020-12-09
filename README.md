@@ -7,7 +7,7 @@ Making drawing board-oriented stuff a bit easier.
 import pygame as pg
 from pygame_board import Board, MyRect
 
-</b># set size of board which is measured in cubes</b>.
+<b># set size of board which is measured in cubes</b>.
 
 BOARD_HEIGHT = 5 # five cubes high
 BOARD_WIDTH = 5 # five cubes wide
@@ -27,17 +27,19 @@ my_board = Board(screen, position(0,0), size=(BOARD_WIDTH, BOARD_HEIGHT),
 		line=True,
 		border=True)
 
-# game loop:
+<b># game loop:</b>
 while True:
-	# event handlings and timings, etc
+	<b># event handlings and timings, etc</b>
+	
 	...
 	
-	# display and render:
+	<b> # display and render:</b>
 	my_board.draw()
 
 	pg.display.flip()
 	
 </code></pre>
 
-## Gifs:
+## Demo:
 
+<img scr="preview/preview.gif">
