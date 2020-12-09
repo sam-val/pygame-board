@@ -3,24 +3,25 @@ Making drawing board-oriented stuff a bit easier.
 
 ## Usage
 
-```
+<pre><code>
 import pygame as pg
 from pygame_board import Board, MyRect
 
-# set size of board **which is measured in cubes**.
+</b># set size of board which is measured in cubes</b>.
 
 BOARD_HEIGHT = 5 # five cubes high
 BOARD_WIDTH = 5 # five cubes wide
 CUBE_WIDTH = 100
 
-# init pygame:
+<b># init pygame:</b>
 
 pg.display.init()
 screen = pg.display.set_mode([BOARD_WIDTH*CUBE_WIDTH, BOARD_HEIGHT*CUBE_WIDTH])
 
 
-# Generate your board:
-my_cube = MyRect(size=(CUBE_WIDTH, CUBE_WIDTH), colour='red')
+<b># Generate your board:</b>
+	
+my_cube = MyRect(size=(CUBE_WIDTH, CUBE_WIDTH), colour='red') # rect object for the cubes that make up the board.
 my_board = Board(screen, position(0,0), size=(BOARD_WIDTH, BOARD_HEIGHT),
 		cube=my_cube, 
 		line=True,
@@ -28,18 +29,15 @@ my_board = Board(screen, position(0,0), size=(BOARD_WIDTH, BOARD_HEIGHT),
 
 # game loop:
 while True:
-	# the program quits if 'q' is pressed.
-	for e in pg.event.get():
-		if e.type -- pg.KEYDOWN:
-			if e.key == pg.K_q:
-				pg.quit()
+	# event handlings and timings, etc
+	...
 	
-	# display board:
+	# display and render:
 	my_board.draw()
 
 	pg.display.flip()
-
-```
+	
+</code></pre>
 
 ## Gifs:
-...
+
