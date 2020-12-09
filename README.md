@@ -1,3 +1,5 @@
+<img scr= "imgs/2.gif" width="400"/>
+
 ## pygame-board
 Making drawing board-oriented stuff a bit easier.
 
@@ -42,4 +44,5 @@ while True:
 
 ## Demo:
 
-<img scr="preview/preview.gif">
+
+
