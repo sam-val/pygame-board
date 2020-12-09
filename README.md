@@ -22,11 +22,11 @@ screen = pg.display.set_mode([BOARD_WIDTH*CUBE_WIDTH, BOARD_HEIGHT*CUBE_WIDTH])
 
 <b># Generate your board:</b>
 	
-my_cube = MyRect(size=(CUBE_WIDTH, CUBE_WIDTH), colour='red') <b># rect object for the cubes that make up the board.</b>
+my_cube = MyRect(size=(CUBE_WIDTH, CUBE_WIDTH), colour='purple') <b># rect object for the cubes that make up the board.</b>
 my_board = Board(screen, position(0,0), size=(BOARD_WIDTH, BOARD_HEIGHT),
 		cube=my_cube, 
 		line=True,
-		border=True)
+		border=False)
 
 <b># game loop:</b>
 while True:
