@@ -2,7 +2,7 @@
 ## pygame-board
 Making drawing board-oriented stuff a bit easier.
 
-## usage:
+## Usage:
 
 <pre><code>
 import pygame as pg
@@ -41,9 +41,5 @@ while True:
 	
 </code></pre>
 
-## demo:
+## Demo:
 <img src= "imgs/preview.gif"/>
-
-
-
-
